@@ -36,7 +36,7 @@ app.get('/unsafe/register',(req,res)=>{
 
 // unsafe register post request
 app.post('/unsafe/register',unsafe_register,(req,res)=>{
-    res.send("successful registration " + req.body.name);
+    res.send("successful registration " + req.body.name + ". <a href='/'>Continue</a>");
 })
 
 // any other page
